@@ -1,0 +1,25 @@
+/*
+    Write a C program to find the factorial of a given number using loop
+    
+    case=1
+    Enter any number to calculate factorial
+    5
+    Factorial of 5 = 120
+    
+*/
+
+#include<stdio.h>
+int main()
+{
+    printf("Enter any number to calculate factorial\n");
+    int a,c, b=1;
+    scanf("%d", &a);
+    c=a;
+    do
+    {
+        b *= a;
+        a--;
+    }while(a>0);
+    printf("Factorial of %d = %d", c, b);
+    return 0;
+}
