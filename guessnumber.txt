@@ -1,11 +1,16 @@
 guess_number = 9
 guess_count = 0
-for guess_count  in range (3):
-    guess = int(input("guess a number : "))
-    guess_count += 1
-    if guess == guess_number:
-        print("well done 👏")
-        break
+while guess_count < 3:        #you have 3 choices 
+        guess = int(input("guess a number : "))
+        guess_count += 1
+        if guess == guess_number:   
+            print("well done 👏")
+            
+            break
+        elif guess<5:
+            print("your guess is too low")
+        elif guess>10:
+            print("your guess is too high")
 else:
         print("You lost !")
         print("Try again 😉")
