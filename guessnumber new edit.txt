@@ -4,15 +4,15 @@ def num_guess():
     while guess_count < 3:        
         guess = int(input("guess a number : "))
         guess_count += 1
-            if guess == guess_number:   
-                print("well done 👏")
-            
-                break
-        
+        if guess == guess_number:   
+            print("well done 👏")
+
+            break
+
             
 
 
-else:
+    else:
         print("You lost !")
         print("Try again 😉") 
         print("Hint:Guess a number between 1 to 10 until u get it right")
